@@ -1,0 +1,81 @@
+:root {
+    --fondo-oscuro: #121212;
+    --fondo-carta: #1e1e1e;
+    --purpura-admin: #6a1b9a; /* Un púrpura más profundo */
+    --cian-aluli: #00bcd4;
+    --texto-claro: #ffffff;
+}
+
+body {
+    margin: 0;
+    background-color: var(--fondo-oscuro);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cuadrado-login {
+    background-color: var(--fondo-carta);
+    border: 2px solid var(--purpura-admin);
+    padding: 45px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(106, 27, 154, 0.2);
+}
+
+.header-admin h2 span { color: var(--cian-aluli); }
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    background: var(--fondo-oscuro);
+    border: 1px solid var(--purpura-admin);
+    border-radius: 10px;
+    color: white;
+    box-sizing: border-box;
+}
+
+.btn-admin {
+    width: 100%;
+    padding: 12px;
+    background: var(--purpura-admin);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-admin:hover {
+    background: var(--cian-aluli);
+}
+
+.link-regreso {
+    display: block;
+    margin-top: 25px;
+    color: #555;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.admin-panel{
+   color: white
+}
+
+.mensaje-alerta {
+    font-size: 0.9rem;
+    margin: 10px 0;
+    min-height: 20px; /* Evita que el botón "salte" al aparecer el texto */
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Clases que el JS pondrá automáticamente */
+.error-text { color: #ff5252; text-shadow: 0 0 5px rgba(255, 82, 82, 0.3); }
+.exito-text { color: var(--cian-aluli); text-shadow: 0 0 5px rgba(0, 188, 212, 0.3); }
